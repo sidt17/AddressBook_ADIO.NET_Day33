@@ -8,8 +8,8 @@ namespace AddressBookSystem
         {
 
             Console.WriteLine("Welcome to Address Book System");
-            Console.WriteLine("Rohit Details deleted successfully");
-            // AddressModelClass addressbook = new AddressModelClass();
+           // Console.WriteLine("Rohit Details deleted successfully");
+             AddressModelClass addressbook = new AddressModelClass();
             AddressBook Details = new AddressBook();
 
             //Console.WriteLine("Enter the First Name :");
@@ -44,7 +44,9 @@ namespace AddressBookSystem
 
             //Details.AddDetails(addressbook);
 
-            Details.DeleteContacts("Rohit");
+            //  Details.DeleteContacts("Rohit");
+            addressbook.EnterNewDetails(addressbook);
+            Details.UpdateDetails(addressbook);
         }
 
     }
